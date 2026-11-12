@@ -746,7 +746,13 @@ img {
   padding-top: 24px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
+  .site-header--home .nav-links{
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: right;
+  }
+
   h1 {
     font-size: 40px;
   }
@@ -754,6 +760,18 @@ img {
   h2 {
     font-size: 30px;
   }
+  
+  .hero-inner {
+    flex-direction: column-reverse;
+  }
+
+  .hero-media {
+    width: 100%;
+  }
+
+  .playbook-grid {
+    grid-template-columns: 1fr;
+  } 
 
   .section {
     padding: 64px 0;
@@ -784,6 +802,14 @@ img {
 }
 
 @media (max-width: 480px) {
+  .site-header--home .container {
+    flex-wrap: wrap;
+  }
+
+  .site-header--home nav {
+    width: 100%;
+  }
+
   h1 {
     font-size: 34px;
   }
