@@ -749,8 +749,7 @@ img {
 @media (max-width: 960px) {
   .site-header--home .nav-links{
     flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: right;
+    gap: 0.5rem;  
   }
 
   h1 {
